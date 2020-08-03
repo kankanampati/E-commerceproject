@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SVNS FASHIONS | Payment</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <form action="/auth/about" method="GET"></form>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="/index">HOME</a></li>
+                    <li><a href="/store">STORE</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/contact">CONTACT US</a></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/feedback">FEEDBACK</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">svns fashions</h1>
+        </header>
+        <div class="container">
+      <form action="" class="payment-form">
+      
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="nanda kiran">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="nandakiran.86@gmail.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Hyderabad">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="nanda">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit"value="Continue to checkout" class="btn">
+      </form>
+    </div>
+        
+        
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">SVNS FASHIONS</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                            <img src="Images/YouTube Logo.png">
+                    </li>
+                    
+                    <li>
+                        
+                            <img src="Images/Spotify Logo.png">
+                    
+                    </li>
+                    <li>
+                    
+                        <img src="Images/Facebook Logo.png">
+                        
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                window.alert("payment successful");
+            })
+        });
+    </script>
+</html>
